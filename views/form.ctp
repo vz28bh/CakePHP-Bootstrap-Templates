@@ -18,8 +18,8 @@
 ?>
 <div class="<?php echo $pluralVar;?> row">
 <div class="actions span2">
-	<h3><?php echo "<?php echo __('Actions'); ?>"; ?></h3>
-	<ul>
+	<ul class="nav nav-list">
+        <li class="nav-header"><?php echo "<?php echo __('Actions'); ?>"; ?></li>
 
 <?php if (strpos($action, 'add') === false): ?>
 		<li><?php echo "<?php echo \$this->Form->postLink(__('Delete'), array('action' => 'delete', \$this->Form->value('{$modelClass}.{$primaryKey}')), null, __('Are you sure you want to delete # %s?', \$this->Form->value('{$modelClass}.{$primaryKey}'))); ?>";?></li>
